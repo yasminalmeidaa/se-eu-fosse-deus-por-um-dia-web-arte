@@ -1,0 +1,83 @@
+.containerimagem {
+    position: relative;
+    display: inline-block; 
+}
+
+.containerimagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#container {
+  display: inline-block;
+  position: relative;
+}
+
+#container figcaption {
+  position: absolute;
+  top: -154px;
+  right: -355px;
+  font-size: 25px;
+  color: black;
+}
+
+#containery {
+  display: inline-block;
+  position: relative;
+}
+
+#containery figcaption {
+  position: absolute;
+  top: -154px;
+  right: -580px;
+  font-size: 25px;
+  color: black;
+}
+
+.botaofinal {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 310px;
+    height: 65px;
+    font-family: "Amiri";
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 30px;
+    cursor: pointer;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate3d(-50%, -50%, 0);
+    -moz-transform:translate3d(-50%, -50%, 0);
+    transform:translate3d(50%, 310%, 0);
+}
+
+.amiri-regular {
+  font-family: "Amiri", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amiri-bold {
+  font-family: "Amiri", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.amiri-regular-italic {
+  font-family: "Amiri", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.amiri-bold-italic {
+  font-family: "Amiri", serif;
+  font-weight: 700;
+  font-style: italic;
+}
