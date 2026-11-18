@@ -1,6 +1,33 @@
-.containerimagem {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  background-color: white;
+}
+
+/* .containerimagem {
     position: relative;
     display: inline-block; 
+} */
+
+.containerimagem {
+  position: relative;
+  width: 100%;
+  max-width: calc(100vh * 2.10197);
+  max-width: calc(100svh * 2.10197);
 }
 
 .containerimagem img {
@@ -17,19 +44,30 @@
     display: flex;
     justify-content: center;
     align-items: center; 
-    width: 170px;
-    height: 65px;
+    /* width: 170px;
+    height: 65px; */
+    width: clamp(100px, 11.2%, 170px);
+    height: clamp(44px, 9%, 65px);
     font-family: "Amiri";
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: clamp(20px, 2.7vw, 40px);
     text-align: center;
-    padding: 15px 30px;
+    /* padding: 15px 30px; */
+    padding: 0 10px;
     cursor: pointer;
     position:absolute;
-    top:50%;
-    left:50%;
-    -webkit-transform:translate3d(-50%, -50%, 0);
-    -moz-transform:translate3d(-50%, -50%, 0);
-    transform:translate3d(-50%, 200%, 0);
+    /* top:50%; */
+    /* left:50%; */
+    top:77%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%);
+    /* -webkit-transform:translate3d(-50%, -50%, 0);
+    -moz-transform:translate3d(-50%, -50%, 0); */
+    /* transform:translate3d(-50%, -50%); */
+    text-decoration: none;
 }
 
 .amiri-regular {

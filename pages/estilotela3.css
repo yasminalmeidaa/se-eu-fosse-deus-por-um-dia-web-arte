@@ -1,6 +1,42 @@
-.containerimagem {
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    place-items: center;
+
+    min-height: 100vh;
+    min-height: 100svh;
+
+    background-color: white;
+}
+
+/* .containerimagem {
     position: relative;
     display: inline-block; 
+} */
+
+
+.containerimagem {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    max-width: 210.2vh;
+    max-width: 210.2svh;
+
+    margin: 0 auto;
 }
 
 .containerimagem img {
@@ -17,16 +53,37 @@
     display: flex;
     justify-content: center;
     align-items: center; 
-    width: 50px;
-    height: 50px;
+    /* width: 50px;
+    height: 50px; */
+    width: clamp(24px, 3.8%, 50px);
+    height: auto;
+    aspect-ratio: 1 / 1;
     font-family: "Amiri";
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: clamp(16px, 2.8vw, 40px);
     text-align: center;
     cursor: pointer;
     position:absolute;
-    top:50%;
-    left:50%;
-    -webkit-transform:translate3d(-50%, -50%, 0);
+    text-decoration: none;
+    /* top:50%;
+    left:50%; */
+    top: 61%;
+    left: 91%;
+    /* -webkit-transform:translate3d(-50%, -50%, 0);
     -moz-transform:translate3d(-50%, -50%, 0);
-    transform:translate3d(1190%, 100%, 0);
+    transform:translate3d(1190%, 100%, 0); */
+    transform: translate(-50%, -50%);
+}
+
+.botaoredondo::before {
+    content: "";
+    position: absolute;
+
+    width: max(44px, 100%);
+    height: max(44px, 100%);
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
 }
