@@ -87,3 +87,47 @@ body {
 
     transform: translate(-50%, -50%);
 }
+
+
+.botaoAudio {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* width: 50px;
+    height: 50px; */
+    width: clamp(24px, 3.8%, 50px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    font-family: "Amiri";
+    /* font-size: 40px; */
+    font-size: clamp(16px, 2.8vw, 40px);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position:absolute;
+    /* top:50%;
+    left:50%; */
+    top: 70%;
+    left: 91%;
+    /* -webkit-transform:translate3d(-50%, -50%, 0);
+    -moz-transform:translate3d(-50%, -50%, 0);
+    transform:translate3d(1190%, 410%, 0); */
+    transform: translate(-50%, -50%);
+}
+
+.botaoAudio::before {
+    content: "";
+    position: absolute;
+
+    width: max(44px, 100%);
+    height: max(44px, 100%);
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
