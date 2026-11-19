@@ -93,7 +93,9 @@ body {
 .botaoAudio {
     background-color: black;
     color: white;
-    border: none;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -112,8 +114,8 @@ body {
     position:absolute;
     /* top:50%;
     left:50%; */
-    top: 47%;
-    left: 9%;
+    top: 70%;
+    left: 91%;
     /* -webkit-transform:translate3d(-50%, -50%, 0);
     -moz-transform:translate3d(-50%, -50%, 0);
     transform:translate3d(1190%, 410%, 0); */
