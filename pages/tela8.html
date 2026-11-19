@@ -20,12 +20,21 @@
   </div>
 
 <audio id="meuAudio" src="../assets/audioestrofes12e15.mp3"></audio>
+<button id="botaoAudio" class="botaoAudio" onclick="alternarSom()">▶︎</button>
 
 <script>
-  window.addEventListener('click', function() {
-    let audio = document.getElementById('meuAudio');
-    audio.play();
-  }, { once: true });
+  const audio = document.getElementById("meuAudio");
+  const botao = document.getElementById("botaoAudio");
+
+  function alternarSom() {
+    if (audio.paused) {
+      audio.play();
+      botao.textContent = "⏸︎";
+    } else {
+      audio.pause();
+      botao.textContent = "▶︎";
+    }
+  }
 </script>
 
 </body>
