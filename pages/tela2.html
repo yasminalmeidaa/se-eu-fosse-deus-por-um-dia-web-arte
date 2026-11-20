@@ -17,7 +17,7 @@
     <a href="tela3.html" class="botaoredondo">
     1
     </a>
-    <button id="botaoAudio" class="botaoAudio" onclick="alternarSom()">▶︎</button>
+    <button id="botaoAudio" class="botaoAudio" onclick="ligarAudio()">▶︎</button>
   </div>
 
 <audio id="meuAudio" src="../assets/audiosestrofe1e2.mp3"></audio>
@@ -26,7 +26,7 @@
   const audio = document.getElementById("meuAudio");
   const botao = document.getElementById("botaoAudio");
 
-  function alternarSom() {
+  function ligarAudio() {
     if (audio.paused) {
       audio.play();
       botao.textContent = "⏸︎";
